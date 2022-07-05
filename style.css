@@ -60,11 +60,13 @@
     justify-content: center;
     background-color: black;
     gap: 50px;
+    height: 100vh;
 }
 
 .dummytext,
 .right,
 .login {
+    font-size: 14px;
     padding-right: 3vw;
     padding-left: 4vw;
 
@@ -73,7 +75,7 @@
 .form-title {
     width: 100%;
     padding-bottom: 20px;
-    font-size: 18px;
+    font-size: 17px;
 }
 
 .form-container {
