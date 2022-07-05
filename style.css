@@ -21,10 +21,10 @@
 }
 
 .left-container {
-    background-image: url(./leaves.jpg);
+    background-image: url(.//bgimg.jpg);
     width: 36vw;
     background-position: center;
-    background-size: auto;
+    background-size:100vh;
     background-repeat: no-repeat;
 }
 
