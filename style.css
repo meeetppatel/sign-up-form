@@ -1,0 +1,27 @@
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: ; */
+    
+}
+
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left-container {
+    background-image: url(./leaves.jpg);
+    width: 40vw;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+}
