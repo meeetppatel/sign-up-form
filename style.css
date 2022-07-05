@@ -41,6 +41,18 @@
     align-items: center;
 }
 
+.bgcredits {
+    position:absolute;
+    bottom: 3px;
+    width: 36vw;
+    text-align: center;
+    font-size: 11px;
+}
+.bgcredits a:hover{
+    color:rgb(58, 145, 58);
+    font-weight: 700;
+}
+
 .right-container {
     width: 64vw;
     display: flex;
