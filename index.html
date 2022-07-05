@@ -10,44 +10,54 @@
 <body>
     <div class="container">
         <div class="left-container">
+            <div class="logo">
+                <img src="./odin-lined.png" alt="logo" height="80px">
+                <h1 class="logotext">logotext</h1>
+            </div>
         </div>
         <div class="right-container">
             <div class="dummytext">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore aliquam exercitationem laudantium sed aut, voluptates quo reiciendis fugiat facere sint!</p>
             </div>
             <form action="#">
-                <div class="form right">
+                <div class="form-container">
                     <p class="form-title">Let's do this!</p>
-                    <div class="input">
-                        <label for="first-name">First Name</label>
-                        <input type="text" name="first-name" id="first-name" required>
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="first-name">First Name</label>
+                            <input type="text" name="first-name" id="first-name" required>
+                        </div>
+                        <div class="input">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" name="last-name" id="last-name">
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="input">
+                            <label for="phone-number">Phone Number</label>
+                            <input type="number" name="phone-number" id="phone-number">
+                        </div>
                     </div>
-                    <div class="input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div class="input">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="number" name="phone-number" id="phone-number">
-                    </div>
-                    <div class="input">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" required>
-                    </div>
-                    <div class="input">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input type="password" name="confirm-password" id="confirm-password" required>
+                    <div class="form-row">
+                        <div class="input">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                        <div class="input">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" required>
+                        </div>
                     </div>
                 </div>
                 <div class="right button">
                     <button type="submit">Create Account</button>
                 </div>
             </form>
-            <div class="log-in left"><p>Already have an account?</p><a href="#">Log in</a></div>
+            <div class="login"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
     </div>
 </body>
