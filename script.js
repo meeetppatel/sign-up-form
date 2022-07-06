@@ -11,23 +11,14 @@ form.addEventListener("submit", () => {
   console.log("peepuupee");
 });
 
-function checkPassword() {
-  const passwordValue = password.value.trim();
-  const confirmPasswordValue = confirmpassword.value.trim();
-  if (passwordValue === confirmPasswordValue) {
-    checkForSuccess(password);
-    checkForSuccess(confirmPassword);
-  } else {
-    checkForError(password, "Passwords does not match");
-    checkForError(confirmPassword, "Passwords does not match");
-  }
-}
-
 document.addEventListener("DOMContentLoaded", () => {
+  errorElement.style.visibility = "hidden";
   password.addEventListener("keyup", () => {
     validate();
   });
-
+  password.addEventListener("focus", () => {
+    errorElement.style.visibility = "visible";
+  });
   confirmpassword.addEventListener("keyup", () => {
     confirmpass();
   });
@@ -77,15 +68,15 @@ function validate() {
 function confirmpass() {
   const pass1 = document.getElementById("password");
   const pass2 = document.getElementById("confirm-password");
-    console.log(pass2)
+  console.log(pass2);
   if (pass1.value.trim() == pass2.value.trim()) {
     document.getElementById("num").style.display = "none";
     document.getElementById("length").style.display = "none";
     document.getElementById("special-char").style.display = "none";
     document.getElementById("lower").style.display = "none";
     document.getElementById("upper").style.display = "none";
-    pass1.style.backgroundColor="rgba(39, 139, 39, 0.25)";
-    pass2.style.backgroundColor="rgba(39, 139, 39, 0.25)";
+    pass1.style.backgroundColor = "rgba(39, 139, 39, 0.25)";
+    pass2.style.backgroundColor = "rgba(39, 139, 39, 0.25)";
   } else {
     document.getElementById("num").style.display = "block";
     document.getElementById("length").style.display = "block";
