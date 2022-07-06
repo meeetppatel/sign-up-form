@@ -25,7 +25,7 @@
                 <br>
                 <p>You know <em>you</em> want to.</p>
             </div>
-            <form action="#">
+            <form action="#" id="form">
                 <div class="form-container">
                     <p class="form-title">Let's do this!</p>
                     <div class="form-row">
@@ -51,12 +51,22 @@
                     <div class="form-row">
                         <div class="input">
                             <label for="password">Password</label>
-                            <input type="password" name="password" id="password" required>
+                            <input type="password" name="password" id="password" class="pass" required>
                         </div>
                         <div class="input">
                             <label for="confirm-password">Confirm Password</label>
-                            <input type="password" name="confirm-password" id="confirm-password" required>
+                            <input type="password" name="confirm-password" id="confirm-password" class="pass" required>
                         </div>
+                    </div>
+                    <div id="errors" class="errors">
+                        <ul>
+                            <li id="upper">!! Atleast one Uppercase</li>
+                            <li id="lower">Atleast one Lowercase</li>
+                            <li id="special-char">Atleast one Special Symbol</li>
+                            <li id="num">Atleast one Number</li>
+                            <li id="length">Atleast 8 Characters</li>
+                        </ul>
+                        <!-- <div id="notmatching">sss</div> -->
                     </div>
                 </div>
                 <div class="right button">
@@ -66,5 +76,6 @@
             <div class="login"><p>Already have an account?</p><a href="#">Log in</a></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -11,8 +11,6 @@
     color: rgb(218, 218, 218);
 }
 
-
-
 .container {
     width: 100vw;
     height: 100vh;
@@ -24,7 +22,7 @@
     background-image: url(.//bgimg.jpg);
     width: 36vw;
     background-position: center;
-    background-size:100vh;
+    background-size: 100vh;
     background-repeat: no-repeat;
 }
 
@@ -42,14 +40,15 @@
 }
 
 .bgcredits {
-    position:absolute;
+    position: absolute;
     bottom: 3px;
     width: 36vw;
     text-align: center;
     font-size: 11px;
 }
-.bgcredits a:hover{
-    color:rgb(58, 145, 58);
+
+.bgcredits a:hover {
+    color: rgb(58, 145, 58);
     font-weight: 700;
 }
 
@@ -115,8 +114,25 @@ input {
 
 input:focus {
     outline: none;
-    border-color:rgb(93, 224, 93);
-    ;
+    border-color: rgb(93, 224, 93);
+}
+
+.errors {
+    position: relative;
+    top: 13px;
+    height: 30px;
+}
+
+.errors ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: row;
+    gap: 8px;
+}
+
+.errors ul li {
+    font-size: 10px;
+    position: relative;
 }
 
 .button,
@@ -132,7 +148,7 @@ button {
     border-radius: 2px;
     height: 40px;
     width: 200px;
-    color:rgb(93, 224, 93);
+    color: rgb(93, 224, 93);
 }
 
 button:hover {
@@ -153,3 +169,4 @@ button:hover {
 .login a:hover {
     color: white;
 }
+
