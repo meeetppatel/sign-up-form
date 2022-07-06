@@ -32,27 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     confirmpass();
   });
 });
-// function CheckPassword(inputtxt) {
-//   var passw = /^[A-Za-z]\w{7,14}$/;
-//   if (inputtxt.value.match(passw)) {
-//     alert("Correct, try another...");
-//     return true;
-//   } else {
-//     alert("Wrong...!");
-//     return false;
-//   }
-// }
-
-// var check = function() {
-//     if (document.getElementById('password').value ==
-//       document.getElementById('confirm_password').value) {
-//       document.getElementById('message').style.color = 'green';
-//       document.getElementById('message').innerHTML = 'matching';
-//     } else {
-//       document.getElementById('message').style.color = 'red';
-//       document.getElementById('message').innerHTML = 'not matching';
-//     }
-//   }
 
 function validate() {
   const pass = document.getElementById("password");
